@@ -10,13 +10,13 @@ gulp.task('serve', function() {
 
   bs.init({
     server: {
-      baseDir: './'
+      baseDir: './src/'
     }  
   });
 
-  gulp.watch('./**/*.html').on('change', bs.reload);
-  gulp.watch('./**/*.js').on('change', bs.reload);
-  gulp.watch('./**/*.css', ['css']);
+  gulp.watch('./src/**/*.html').on('change', bs.reload);
+  gulp.watch('./src/**/*.js').on('change', bs.reload);
+  gulp.watch('./src/**/*.css', ['css']);
 
 });
 
